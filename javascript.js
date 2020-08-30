@@ -9,5 +9,6 @@ myfun = function() {
 
 var lastName ="Tyagi";
 console.log(lastName);
-		
+
+console.log('hello world');	
 }
