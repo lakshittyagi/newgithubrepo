@@ -7,6 +7,8 @@ myfun = function() {
 	 	document.getElementById('new').innerHTML = name;
 	}
 
-console.log('hello world');
-		
+var lastName ="Tyagi";
+console.log(lastName);
+
+console.log('hello world');	
 }
