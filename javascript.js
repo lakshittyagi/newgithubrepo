@@ -7,6 +7,6 @@ myfun = function() {
 	 	document.getElementById('new').innerHTML = name;
 	}
 
-
+console.log('hello world');
 		
 }
