@@ -1,14 +1,13 @@
 var name = "akshu tyagi";
 
 console.log(name);
-
-myfun = function() {
-	for(var i = 0; i<10; i++){
-	 	document.getElementById('new').innerHTML = name;
-	}
-
 var lastName ="Tyagi";
+myfun = function() {
+
+	 	document.getElementById('new').innerHTML = name;
+	 	document.getElementById('name').innerHTML = lastName;
+}
+
 console.log(lastName);
 
 console.log('hello world');	
-}
