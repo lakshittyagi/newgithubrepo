@@ -2,20 +2,110 @@
 <html>
 <head>
 	<title></title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="javascript.js"></script>
 </head>
 <body>
 
-<h1>Let's play a game</h1>
-Dice - <p id="dice"></p>
+
+<div class="container P-4 mt-5">
+	<h1>Let's play a game</h1>
+	<div class="row">
+		<div class="col-md-5">
+			<div class="card">
+				<div class="card-header">PLAYER 1</div>
+				<div class="card-body">
+
+					<div class="row">
+						<div class="col-md-6">
+							Round Score
+						</div>
+						<div class="col-md-6">
+							<p id="current-0"></p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							Global Score
+						</div>
+						<div class="col-md-6">
+							<p id="score-0"></p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+
+
+		<div class="col-md-2">
+			<div class="card">
+				<div class="card-header">
+					Dice
+				</div>
+				<div class="card-body">
+					 <p id="dice"></p>
+				</div>
+			</div>
+			<div class="my-3 text-center">
+		       <button class="btn btn-success" onclick="myfun()">Play</button>
+               <button class="btn btn-danger" onclick="hold()">Hold</button>		
+			</div>
+			
+		</div>
+
+
+		<div class="col-md-5">
+			<div class="card">
+				<div class="card-header">
+					PLAYER 2
+				</div>
+				<div class="card-body">
+
+					<div class="row">
+						<div class="col-md-6">
+							Round Score
+						</div>
+						<div class="col-md-6">
+							<p id="current-1"></p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							Global Score
+						</div>
+						<div class="col-md-6">
+							<p id="score-1"></p>
+						</div>
+					</div>
+
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- 
 player 1 round score   - <p class="" id="current-0">33</p> 
 <h1>Player 1 global score</h1>  - <p class="" id="score-0"></p>
 <br>
 player 2 round score <p class="" id="current-1">44</p>
-<h1>Player 2 global score</h1>  - <p class="" id="score-1"></p>
+<h1>Player 2 global score</h1>  - <p class="" id="score-1"></p> -->
 
-<button onclick="myfun()">Play</button>
-<button onclick="hold()">Hold</button>
+
 
 <script type="text/javascript">
 	 document.querySelector('#current-0').textContent = "0";
