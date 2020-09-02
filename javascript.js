@@ -23,10 +23,17 @@ function myfun() {
 function hold() {
    
 	   score[activePlayer] +=  roundScore;
+	   if (score[activePlayer] >= 100) {
+	   	document.querySelector('#player-' + activePlayer).textContent = "Winner";
+	   }
+	   else {
 	   document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
 	   roundScore = 0;
 	   document.getElementById('current-' + activePlayer).textContent = roundScore;
-	   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+	   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;	   	
+	   }
+
+
    
 
 }
