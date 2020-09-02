@@ -6,16 +6,22 @@
 </head>
 <body>
 
-	<h1>Hello world</h1>
+<h1>Let's play a game</h1>
+Dice - <p id="dice"></p>
+player 1 round score   - <p class="" id="current-0">33</p> 
+<h1>Player 1 global score</h1>  - <p class="" id="score-0"></p>
+<br>
+player 2 round score <p class="" id="current-1">44</p>
+<h1>Player 2 global score</h1>  - <p class="" id="score-1"></p>
 
-	<h1>new branch dev</h1>
+<button onclick="myfun()">Play</button>
+<button onclick="hold()">Hold</button>
 
-	<h1>Master branch 2.0</h1>
+<script type="text/javascript">
+	 document.querySelector('#current-0').textContent = "0";
+     document.querySelector('#current-1').textContent = "0";
 
-
-	<button onclick="myfun()">Click me</button>
-    <p id="new"></p>
-	<h2>Akshu Tyagi</h2>
+</script>
 
 </body>
 </html>
