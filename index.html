@@ -10,16 +10,16 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="javascript.js"></script>
 </head>
-<body>
+<body style="background-color: #04B486;">
 
 
 <div class="container P-4 mt-5">
-	<h1>Let's play a game</h1>
+	<h1 class="text-warning text-capitalize text-center bg-dark p-2">Let's play pig game</h1>
 	<div class="row">
 		<div class="col-md-5">
 			<div class="card">
-				<div class="card-header" id="player-0">PLAYER 1</div>
-				<div class="card-body">
+				<div class="card-header bg-warning text-dark" id="player-0">PLAYER 1</div>
+				<div class="card-body bg-dark text-white">
 
 					<div class="row">
 						<div class="col-md-6">
@@ -47,17 +47,17 @@
 
 		<div class="col-md-2">
 			<div class="card">
-				<div class="card-header">
+				<div class="card-header bg-warning text-dark">
 					Dice
 				</div>
-				<div class="card-body">
+				<div class="card-body bg-dark text-white text-center">
 					 <p id="dice"></p>
 				</div>
 			</div>
 			<div class="my-3 text-center">
-		       <button class="btn btn-success" id="btn" onclick="myfun()">Play</button>
-		       <button class="btn btn-success mb-2" id="btn-reload" style="display: none;" onclick="window.location.reload();">Play again</button>
-               <button class="btn btn-danger" onclick="hold()">Hold</button>		
+		       <button class="btn btn-warning" id="btn" onclick="myfun()">Play</button>
+		       <button class="btn btn-warning" id="btn-reload" style="display: none;" onclick="window.location.reload();">Play again</button>
+               <button class="btn btn-danger" id="btn-hold" onclick="hold()">Hold</button>		
 			</div>
 			
 		</div>
@@ -65,10 +65,10 @@
 
 		<div class="col-md-5">
 			<div class="card">
-				<div class="card-header" id="player-1">
+				<div class="card-header text-dark bg-warning" id="player-1">
 					PLAYER 2
 				</div>
-				<div class="card-body">
+				<div class="card-body bg-dark text-white">
 
 					<div class="row">
 						<div class="col-md-6">
@@ -92,20 +92,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
-
-<!-- 
-player 1 round score   - <p class="" id="current-0">33</p> 
-<h1>Player 1 global score</h1>  - <p class="" id="score-0"></p>
-<br>
-player 2 round score <p class="" id="current-1">44</p>
-<h1>Player 2 global score</h1>  - <p class="" id="score-1"></p> -->
-
 
 
 <script type="text/javascript">

@@ -24,16 +24,18 @@ function hold() {
    
 	   score[activePlayer] +=  roundScore;
 	   if (score[activePlayer] >= 100) {
-	   	document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
-	   	document.querySelector('#player-' + activePlayer).textContent = "Winner";
-	   	document.querySelector('#btn').style.display = "none";
-	   	document.querySelector('#btn-reload').style.display = "block";
+		   	document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
+		   	document.querySelector('#player-' + activePlayer).textContent = "Winner";
+		   	document.querySelector('#btn').style.display = "none";
+		   	document.querySelector('#btn-reload').style.display = "block";
+		   	document.querySelector('#btn-hold').style.display = "none";
+
 	   }
 	   else {
-	   document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
-	   roundScore = 0;
-	   document.getElementById('current-' + activePlayer).textContent = roundScore;
-	   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;	   	
+		   document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
+		   roundScore = 0;
+		   document.getElementById('current-' + activePlayer).textContent = roundScore;
+		   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;	   	
 	   }
 
 
